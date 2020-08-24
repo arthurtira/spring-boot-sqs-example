@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /api
+
+orders:
+  queue:
+    name: OrderMessages-Q
+
+cloud:
+  aws:
+    region: eu-west-1
+
+logging:
+  level:
+    com.arthurtira.sbs: DEBUG
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
