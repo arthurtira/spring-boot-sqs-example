@@ -1,5 +1,5 @@
 # spring-boot-sqs-example
-Example application to show show how you can send and consume messages to and from an AWS SQS queue with Spring Boot
+Example application to show how to send and consume messages to and from an AWS SQS queue with Spring Boot
 
 # What you will need to run the application
  1. An AWS account
@@ -9,12 +9,12 @@ Example application to show show how you can send and consume messages to and fr
 ### How to run it?
 Package the application as a Docker image and run as a Docker container. 
 
-To build the docker image use the following command:
+To build the Docker image use the following command:
 ```
 $ docker build -t spring-boot-sqs-example .
 ```
 
-To run the Docker container run the following command, make sure to replace ACCESS_KEY_ID_HERE and SECRET_ACCESS_KEY_HERE with your AWS credentials:
+To run the Docker container use the following command and make sure to replace ACCESS_KEY_ID_HERE and SECRET_ACCESS_KEY_HERE with your AWS credentials:
 
 ```
 $ docker run --env AWS_ACCESS_KEY_ID=ACCESS_KEY_ID_HERE --env AWS_SECRET_ACCESS_KEY=SECRET_ACCESS_KEY_HERE -p 8080:8080 spring-boot-sqs-example 
